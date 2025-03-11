@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.footer-underline::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.footer-underline:hover::after {
+    transform: scale(1);
+}
+
+.active {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
